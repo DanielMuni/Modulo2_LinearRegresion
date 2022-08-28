@@ -1,10 +1,14 @@
 # Daniel Munive Meneses - A01734205
 
 **Table of Contents**
+- [Daniel Munive Meneses - A01734205](#daniel-munive-meneses---a01734205)
+- [CODE - Regresion Linerar](#code---regresion-linerar)
+  * [DataBase](#database)
+  * [CODE](#code)
+- [Contacto](#contacto)
 
-[TOCM]
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-[TOC]
 
 # CODE - Regresion Linerar
 
