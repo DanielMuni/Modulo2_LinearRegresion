@@ -6,11 +6,11 @@
 
 [TOC]
 
-#CODE - Regresion Linerar
+# CODE - Regresion Linerar
 
 Programa uno de los algoritmos vistos en el módulo (o que tu profesor de módulo autorice) sin usar ninguna biblioteca o framework de aprendizaje máquina, ni de estadística avanzada. Lo que se busca es que implementes manualmente el algoritmo, no que importes un algoritmo ya implementado.
 
-##DataBase
+## DataBase
 
 Para la eleccion de la Database con la que se va a trabajar se hizo uso de la pagina de [kaggle](https://www.kaggle.com).
 
@@ -18,7 +18,7 @@ La DataBase con la que se decidio trabajar fue la de Ice Cream Revenue
 
 [![](https://storage.googleapis.com/kaggle-datasets-images/561327/1020381/905a1fba1578607968d510686bcf7194/dataset-cover.jpg?t=2020-03-18-19-03-06)](https://www.kaggle.com/datasets/vinicius150987/ice-cream-revenue)
 
-##CODE
+## CODE
 
 Primero se importaron las librerias con las que ibamos a trabajar.
 - [pandas](https://pandas.pydata.org/docs/) para poder trabajar con los datos de la database
@@ -96,5 +96,12 @@ plt.show()
 ```
 ****
 
-#Contacto
+# Contacto
 A01734205@tec.mx
+
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
+## Headers
