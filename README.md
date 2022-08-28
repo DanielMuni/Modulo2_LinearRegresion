@@ -41,6 +41,7 @@ Y = data.iloc[:,1].astype(float) #Revenue (Dolares)
 ```
 
 - Ejemplo de los datos a trabajar
+
 ![](images/sample.jpg)
 
 ```python
@@ -105,10 +106,12 @@ plt.show()
 
 ### Resultados
 - En terminal
+
 ![](images/Terminal.jpg)
 
 
 - Grafica obtenida en Interfaz
+
 ![](images/plot.jpg)
 
 
