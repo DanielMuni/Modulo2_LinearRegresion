@@ -18,7 +18,7 @@ Para la eleccion de la Database con la que se va a trabajar se hizo uso de la pa
 
 La DataBase con la que se decidio trabajar fue la de Ice Cream Revenue
 
-[![](https://storage.googleapis.com/kaggle-datasets-images/561327/1020381/905a1fba1578607968d510686bcf7194/dataset-cover.jpg?t=2020-03-18-19-03-06)](https://www.kaggle.com/datasets/vinicius150987/ice-cream-revenue)
+[![database]([link to image on GH](https://storage.googleapis.com/kaggle-datasets-images/561327/1020381/905a1fba1578607968d510686bcf7194/dataset-cover.jpg?t=2020-03-18-19-03-06))]([link to your URL](https://www.kaggle.com/datasets/vinicius150987/ice-cream-revenue))
 
 ## CODE
 
