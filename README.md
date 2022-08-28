@@ -5,6 +5,7 @@
 - [CODE - Regresion Linerar](#code---regresion-linerar)
   * [DataBase](#database)
   * [CODE](#code)
+    + [Resultados](#resultados)
 - [Contacto](#contacto)
 
 
@@ -18,7 +19,8 @@ Para la eleccion de la Database con la que se va a trabajar se hizo uso de la pa
 
 La DataBase con la que se decidio trabajar fue la de Ice Cream Revenue
 
-[![database]([link to image on GH](https://storage.googleapis.com/kaggle-datasets-images/561327/1020381/905a1fba1578607968d510686bcf7194/dataset-cover.jpg?t=2020-03-18-19-03-06))]([link to your URL](https://www.kaggle.com/datasets/vinicius150987/ice-cream-revenue))
+[![name](images/dataset-cover.jpg)](https://www.kaggle.com/datasets/vinicius150987/ice-cream-revenue)
+
 
 ## CODE
 
@@ -37,6 +39,9 @@ X = data.iloc[:,0].astype(float) #Celsius
 Y = data.iloc[:,1].astype(float) #Revenue (Dolares)
 
 ```
+
+- Ejemplo de los datos a trabajar
+![](images/sample.jpg)
 
 ```python
 # Se definen las variables que vamos a ocupar para la regresion linear
@@ -97,6 +102,15 @@ plt.title("Temperature vs Revenue")
 plt.show()
 ```
 ****
+
+### Resultados
+- En terminal
+![](images/Terminal.jpg)
+
+
+- Grafica obtenida en Interfaz
+![](images/plot.jpg)
+
 
 # Contacto
 A01734205@tec.mx

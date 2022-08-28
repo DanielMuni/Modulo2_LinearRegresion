@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 #Se importa la base de datos
 data = pd.read_csv('./IceCreamData.csv')
 
-#Se seleccionan las columas con las que voy a trabajar
+#Se selecciono las columas con las que voy a trabajar
 X = data.iloc[:,0].astype(float) #Celsius
 Y = data.iloc[:,1].astype(float) #Revenue (Dolares)
 
@@ -55,7 +55,7 @@ m, c = GradientDesc(m,c,L,i,X,Y)
 y_pred = m*X + c
 
 
-#Prediccione
+#Predicciones
 Prediction(m,c,50.0)
 Prediction(m,c,30.0)
 Prediction(m,c,25.0)
