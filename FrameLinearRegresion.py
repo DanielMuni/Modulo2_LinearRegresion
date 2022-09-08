@@ -25,7 +25,7 @@ Y = np.array(data.iloc[:,1]).reshape(-1,1) #Revenue (Dolares)
 
 x_train, x_test, y_train, y_test = train_test_split(X,Y, test_size= 0.25)
 
-regr = LinearRegression()
+regr = LinearRegression(fit_intercept =False)
 regr.fit(x_train,y_train)
 print(regr.score(x_test,y_test), "\n")
 
@@ -34,7 +34,7 @@ print(regr.coef_)
 print("--------------------------------------------------------------------------------")
 
 #Se calculan las predicciones para la regresion linear
-print(regr.predict([[50],[30],[25],[5]]))
+print(regr.predict([[50],[30],[25],[0], [-20]]))
 
 
 #Creamos una grafica con los resultados
