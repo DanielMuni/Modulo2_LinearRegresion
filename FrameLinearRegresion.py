@@ -1,7 +1,7 @@
 #Daniel Munive Meneses
 #A01734205
 
-#Módulo 2 Implementación de una técnica de aprendizaje máquina sin el uso de un framework.
+#Módulo 2 Implementación de una técnica de aprendizaje máquina con el uso de un framework.
 #Regresion Linear
 
 #Se importan las librerias necesarias del proyecto
