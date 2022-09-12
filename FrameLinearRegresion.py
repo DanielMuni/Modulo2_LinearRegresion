@@ -63,6 +63,7 @@ print("Model score test: ", regr.score(X_test, Y_test))
 print("MSE train: ",mean_squared_error(Y_train, Y_pred_train))
 print("Model score train: ", regr.score(X_train, Y_train))
 
+
 #Plot de la regresión
 figure, axis = plt.subplots(2,3)
 
@@ -80,11 +81,16 @@ axis[0,1].set_xlim(-200, 200)
 axis[0,1].set(xlabel = 'Rating prediction error (Y_test - Y_pred)', ylabel = 'Frequency')
 
 #varianza(?)
-axis[0,2].scatter(X_test, Y_test, alpha = 0.5, label = 'Real data')
-axis[0,2].scatter(X_test, Pred_error_test, color='orange',alpha = 0.1, label = 'Predicted data')
+#axis[0,2].scatter(X_test, Y_test, alpha = 0.5, label = 'Real data')
+#axis[0,2].scatter(X_test, Pred_error_test, color='orange',alpha = 0.1, label = 'Predicted data')
+
+axis[0,2].scatter(range(len(Y_test)), Y_test, label = 'y_test')
+axis[0,2].scatter(range(len(Y_test)), Y_pred, label = 'yfit_test')
 axis[0,2].set_title("Real test data vs Predicted test data")
 axis[0,2].set(xlabel = 'Temperature(Celsius)', ylabel = 'Revenue(Dolars)')
 axis[0,2].legend()
+
+
 
 
 #TRAIN
@@ -107,6 +113,7 @@ axis[1,2].set_title("Real train data vs Predicted train data")
 axis[1,2].set(xlabel = 'Temperature(Celsius)', ylabel = 'Revenue(Dolars)')
 axis[1,2].legend()
 plt.show()
+
 
 model_lasso = Lasso(alpha = 0.01)
 model_lasso.fit(X_train, Y_train)
