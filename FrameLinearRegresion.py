@@ -25,10 +25,6 @@ df['Revenue'] = df['Revenue'][1:].astype(float)
 #Limpieza de datos, considerando que no puede haber datos vacíos en dichas columnas
 df = df.drop(df[df.Temperature.isnull()].index)
 df = df.drop(df[df.Revenue.isnull()].index)
-
-
-
-#Los usuarios deben haber visto el anime por lo menos una vez
 df = df[df['Revenue'] > 0]
 
 print(df)
@@ -41,7 +37,7 @@ Y = np.array(df['Revenue']).reshape(-1,1)
 #Division del data set en train y test
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.30)
 
-#Se hace el calculo del la regresion por medio de los metoddos de sklearn
+#Se hace el calculo del la regresion por medio de los metodos de sklearn
 regr = LinearRegression(fit_intercept = False).fit(X_train,Y_train)
 
 #Coeficiente e Intercepto
