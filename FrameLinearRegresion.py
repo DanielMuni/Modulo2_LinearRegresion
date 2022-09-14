@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression, Lasso
+from sklearn.model_selection import cross_val_score
 
 
 #Obtención de los datos a partir de un csv con pandas
@@ -63,6 +64,8 @@ print("Model score test: ", regr.score(X_test, Y_test))
 print("MSE train: ",mean_squared_error(Y_train, Y_pred_train))
 print("Model score train: ", regr.score(X_train, Y_train))
 
+cv = abs(cross_val_score(regr, X_train, Y_train, cv=10, scoring='r2').mean())
+print ("Cross validation: ", cv)
 
 #Plot de la regresión
 figure, axis = plt.subplots(2,3)
@@ -125,5 +128,4 @@ print("Lasso score train: ", r2_score(Y_train, pred_train_lasso))
 pred_test_lasso = model_lasso.predict(X_test)
 print("MSE in Lasso test: ", mean_squared_error(Y_test, pred_test_lasso))
 print("Lasso score test: ", r2_score(Y_test, pred_test_lasso))
-
 
